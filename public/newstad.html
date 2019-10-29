@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lägg till ny stad</title>
+    
+</head>
+<body>
+    
+    <form class="frm" action="/stad" method="post">
+        <label>Lägg till ny stad:</label><br/>
+        <input type="hidden" name="landid" id="hid">
+        <input type="text" name="newstad"><br/>
+        <label>Befolkning:</label><br/>
+        <input type="text" name="popu"><br/><br/>
+        <input type="submit" value="Lägg till">
+    </form>
+
+    <script src="javascripts/newstad.js"></script>
+</body>
+</html>
