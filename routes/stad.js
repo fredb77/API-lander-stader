@@ -27,14 +27,14 @@ router.post('/', urlencodedParser, function(req, res) {
       var a = stad.length;
       a++;
 
-      const lid = parseInt(req.body.landid, 10)
-      //lid = req.body.landid;
-      console.log(lid);
+      const lid = parseInt(req.body.landid, 10);
+      const pop = parseInt(req.body.popu, 10)
+      
           newstad = {
               "id": a,
               "stadname": req.body.newstad,
               "countryid": lid,
-              "population": req.body.popu
+              "population": pop
           }
       
           stad.push(newstad);
