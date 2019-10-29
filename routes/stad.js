@@ -45,7 +45,7 @@ router.post('/', urlencodedParser, function(req, res) {
           if (err) throw err;
       });
 
-      res.send("Ny stad <b>" + req.body.newstad + "</b> har skapats...<br/><br/><a href='https://fredb77.github.io/Inlamning-Stader-och-lander//'>Tillbaks</a>")
+      res.send("Ny stad <b>" + req.body.newstad + "</b> har skapats...<br/><br/><a href='https://fredb77.github.io/Inlamning-Stader-och-lander/'>Tillbaks</a>")
 
   });   // END fs
   
